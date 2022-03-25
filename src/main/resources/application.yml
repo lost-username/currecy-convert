@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: root
+    password: root
+  jpa:
+    properties:
+        hibernate:
+            format_sql: true
+  mvc:
+    athmatch:
+      matching-strategy: ant_path_matcher
+
+app:
+  name: Currency Convert
+  api:
+    title: Currency Convert API
+    version: 1.0.0
+    description: API for Currency Convert
+    base-package: com.convert.currencyconvert
+    contact-name: Guilherme {gH}
+    contact-email: meuemail@gmail.com
+    swagger:
+      enable: true
